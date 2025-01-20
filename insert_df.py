@@ -2,7 +2,7 @@ from clickhouse_driver import Client
 import pandas as pd
 import re
 
-client = Client('clickhouse://db_host') # 改成要讀取DB的Host
+client = Client('clickhouse://db_host') # 改成要讀取DB的Host, DB金鑰4rGMCUjFp1zR9emoeb2V8Q
 
 def read_sql(sql):
     data, columns = client.execute(
